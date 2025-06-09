@@ -14,3 +14,12 @@ body {
     height: 350px;
     object-fit: contain;
 }
+
+#contenedor-personajes .card {
+    transition: transform 0.3s ease-in-out;
+}
+
+#contenedor-personajes .card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
