@@ -6,3 +6,11 @@ body {
     background-attachment: fixed;
 }
 
+#contenedor-personajes .card {
+    max-width: 250px;
+}
+
+#contenedor-personajes .card-img-top {
+    height: 350px;
+    object-fit: contain;
+}
