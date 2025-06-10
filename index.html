@@ -24,10 +24,26 @@
             </form>
         </div>
     </nav>
-    
+
     <div class="container mt-4">
         <div id="contenedor-personajes" class="row justify-content-center"> </div>
         <div id="mensaje-error" class="text-center text-danger mt-3"></div>
+    </div>
+
+    <div class="modal fade" id="personajeModal" tabindex="-1" aria-labelledby="personajeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="personajeModalLabel">Detalles del Personaje</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modal-body-content">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
