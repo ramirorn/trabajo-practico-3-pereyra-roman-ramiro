@@ -49,7 +49,7 @@ function renderizarPersonajes(personajes) {
         });
     } else {
         // Muestra este mensaje si no hay personajes para renderizar
-        mostrarMensaje("No se encontraron personajes que coincidan con la busqueda"); 
+        mostrarMensaje("No se encontraron personajes que coincidan con la busqueda");
     }
 }
 
@@ -62,10 +62,10 @@ function mostrarMensaje(mensaje) {
 botonBuscar.addEventListener("click", (e) => {
     e.preventDefault(); // Evita que la pagina se recargue
     const termino = inputBusqueda.value.trim().toLowerCase();
-    
+
     mostrarMensaje(""); // Limpia los mensajes anteriores
 
-    if (termino === "") { 
+    if (termino === "") {
         mostrarMensaje("Por favor ingresa un nombre dentro de la lista de personajes");
         renderizarPersonajes(todosLosPersonajes); // Muestra todos los personajes si el campo está vacío
         return;
@@ -89,6 +89,6 @@ cargarDatos(urlDragonBall).then(data => {
         todosLosPersonajes = data.items; // Se guardan todos los personajes
         renderizarPersonajes(todosLosPersonajes); // Y se renderizan
     } else {
-        mostrarMensaje("No se encontraron personajes"); 
+        mostrarMensaje("No se encontraron personajes");
     }
 });
